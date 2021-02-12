@@ -1,0 +1,51 @@
+pluginManagement {
+ 	repositories {
+ 		maven {
+ 			url "file://Volumes/sdcard/yuki/local_publish"
+ 		}
+ 		gradlePluginPortal()
+ 	}
+}
+
+rootProject.name = 'hatunmayu-backend'
+
+ [
+'lobby-service',
+'security-service',
+'shop-service',
+'gameplay-service',
+'ranking-service',
+'player-service',
+'development-api'
+ ].each{name-> 
+ 	include ":${name}"
+ 	project(":${name}").projectDir = new File(settingsDir, "./${name}")
+}
+
+//include ":http-endpoints-service"
+//project(":http-endpoints-service").projectDir = new File(settingsDir, "../yuki-framework/http-endpoints-service")
+
+//include ":dataaccess"
+//project(":dataaccess").projectDir = new File(settingsDir, "../yuki-framework/dataaccess")
+
+//include ":dataschema"
+//project(":dataschema").projectDir = new File(settingsDir, "../yuki-framework/dataschema")
+
+/*
+
+include ':endpoints'
+project(':endpoints').projectDir = new File(settingsDir, './endpoints')
+include ':shootory-gen'
+project(':shootory-gen').projectDir = new File(settingsDir, './shootory-gen')
+
+include ':shootory-database2'
+project(':shootory-database2').projectDir = new File(settingsDir, './shootory-database')
+
+include ':shootory-jndi'
+project(':shootory-jndi').projectDir = new File(settingsDir, './shootory-jndi')
+
+
+include ':shootory-function'
+project(':shootory-function').projectDir = new File(settingsDir, './shootory-function')
+*/
+

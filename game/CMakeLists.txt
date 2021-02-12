@@ -58,10 +58,46 @@ endif()
 list(APPEND GAME_SOURCE
      Classes/AppDelegate.cpp
      Classes/HelloWorldScene.cpp
+
+     Classes/scenes/GameOverScene/GameOverScene.cpp
+     Classes/scenes/GameScene/GameScene.cpp
+     Classes/scenes/GarageScene/GarageScene.cpp
+
+     Classes/scenes/LobbyScene/LobbyScene.cpp
+     Classes/scenes/LobbyScene/PlayerSlot.cpp
+
+     Classes/scenes/RepairStationScene/RepairStationScene.cpp
+     Classes/scenes/SplashScene/SplashScene.cpp
+     Classes/scenes/StartScene/StartScene.cpp
+     Classes/scenes/TrainingScene/TrainingScene.cpp
+     Classes/scenes/TravelScene/TravelScene.cpp
+     Classes/scenes/BattleScene/BattleScene.cpp
+
+     Classes/entities/ship-001/ship-001.cpp
      )
 list(APPEND GAME_HEADER
      Classes/AppDelegate.h
      Classes/HelloWorldScene.h
+
+     Classes/commons/ProjectMacros.h
+     Classes/commons/Resources.h
+     Classes/commons/DevelopmentUtils.h
+
+     Classes/scenes/GameOverScene/GameOverScene.h
+     Classes/scenes/GameScene/GameScene.h
+     Classes/scenes/GarageScene/GarageScene.h
+
+     Classes/scenes/LobbyScene/LobbyScene.h
+     Classes/scenes/LobbyScene/PlayerSlot.h
+
+     Classes/scenes/RepairStationScene/RepairStationScene.h
+     Classes/scenes/SplashScene/SplashScene.h
+     Classes/scenes/StartScene/StartScene.h
+     Classes/scenes/TrainingScene/TrainingScene.h
+     Classes/scenes/TravelScene/TravelScene.h
+     Classes/scenes/BattleScene/BattleScene.h
+
+     Classes/entities/ship-001/ship-001.h
      )
 
 if(ANDROID)

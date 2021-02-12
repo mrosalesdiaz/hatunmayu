@@ -1,0 +1,96 @@
+Scenes
+    SplashScene (Simple screen with my logo)
+        * Load company logo
+    StartScene (Screen to login and start the game)
+        * Load Resources
+        * Start button, login with Google
+        * Version game
+    LobbyScene (First scene to start the game)
+        * Create war map
+            - Configure map and resources
+            - Select map
+        * Join war map
+        * Invite war map
+        * Select ships
+        * Select weapons
+    TrainingScene (Simple stage where to practice war with bots)
+        * Select map
+        * Select ships
+        * Select weapons
+    GarageScene
+        * My ships
+        * My assets
+        * Custom
+    GameScene
+        * Select resource
+        TravelScene
+            * Select area
+        BattleScene
+            * Move Stage
+            * Attack mode
+        RepairStationScene
+            * Repairs
+            * Buy weapons
+            * Buy ammo
+        TravelScene
+    GameOverScene
+        * Show game stats
+        * back to lobby
+
+
+Services
+    AuthenticationService [Save google information]
+        * Google service authentication
+    LobbyService [Manage lobby]
+        * Create
+        * Join
+        * Kick
+        * Invite
+        * List players
+        * List lobbies
+    PlayerService [Search find players]
+        * Find player
+        * Stats
+    ShopService [List available ships]
+        * List models
+        * Show stats
+        * Equipment
+    GameService [Handle information inside the game]
+        * Player
+            - Ships
+            - Weapon
+            - Ammo
+            - Stats
+            - Current Sector
+        * Map
+            - Garage
+                - Ships
+                - Ammo
+            - Sector
+                - Resources
+                - Current Player
+        * Update fight data
+
+
+[MVP] Sing in Google
+[MVP] Connect to HTTP service
+[MVP] Basic Ship
+[MVP] Create dummy scenes
+[MVP] Create dummy services
+[MVP] Create database
+[MVP] Create player movement
+[MVP] Create player weapons and IA bullet
+
+[MVP] Create game fight mechanics
+[MVP] Create game collect mechanics
+
+Create skeleton
+Create lobby features
+Refine training mode
+Refine shop
+Refine game fight mechanics 
+Refine game travel
+Refine game shop
+Refine rankings
+Refine general
+
